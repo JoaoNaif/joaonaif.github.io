@@ -5,18 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../dist/output.css">
+    <script src="https://kit.fontawesome.com/e8cefb18d3.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header class=" bg-black transition-all duration-200 ease-linear fixed w-screen flex justify-between items-center p-2 text-xl h-10" id="header">
-        <p class="text-white font-bold">Jv.Naif</p>
+    <header class=" bg-black transition-all duration-200 ease-linear fixed w-screen flex justify-between p-2 text-xl h-10" id="header">
+        <p class="text-sky-400 font-bold " id="logo">Jv.Naif</p>
         <svg id="bars" class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-          </svg>
+        </svg>
+
+        <div class="hidden" id="card">
+            <svg id="out" class="w-8 h-8 m-2 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+              
+            <ul class="text-white  w-screen text-center mt-3" id="list">
+                <li class="my-3 border-b-2 border-red-500"><a href="#">HOME</a></li>
+                <li class="my-3"><a href="#">FORMAÇÃO</a></li>
+                <li class="my-3">TECNOLOGIA</li>
+            </ul>
+        </div>
+        
           
     </header>
-    <section class="flex h-screen w-[100vw]" id="home">
-        <div class="pt-10 w-screen bg-blue-300">
-            <h1>Página principal</h1>
+    <section class="flex h-screen w-[100vw] p-2 bg-black " id="home">
+        <div class="pt-24 w-screen text-white">
+            <h4 class="text-xl font-bold text-sky-400">Seja Bem-Vindo</h4>
+            <h1 class="text-4xl font-bold mb-5 mt-3 ">Programador</h1>
+            <p class="pr-12">Eu sou Desenvolvedor Web, atualmente só atuo como Frontend, mas tenho abição de me tornar um programador FullStack, atualmente minha experiência é como freelancer, desenvolvendo pequenos projetos para familiares e conhecidos</p>
+            <ul class="flex mt-4">
+                <li><a href="https://www.instagram.com/joaonaif/?hl=pt-br"><i class="fa-brands fa-instagram mr-4 border-solid border-2 p-[5px] rounded-full"></i></a></li>
+                <li><a href="https://github.com/JoaoNaif"><i class="fa-brands fa-github mr-4 border-solid border-2 p-[5px] rounded-full"></i></a></li>
+                <li><a href="https://br.pinterest.com/jnaifdeabreu/"><i class="fa-brands fa-pinterest-p mr-4 border-solid border-2 p-[5px] rounded-full"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/joaonaif/"><i class="fa-brands fa-linkedin-in mr-4 border-solid border-2 p-[5px] rounded-full "></i></a></li>
+            </ul>
         </div>
     </section>
 
