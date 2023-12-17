@@ -55,3 +55,9 @@ tudo.addEventListener('click', ()=>{
     })
 })
 
+window.onload = function(){
+    document.querySelectorAll('aside').forEach((att, index)=>{
+        att.style.display = 'flex'
+    })
+}
+
