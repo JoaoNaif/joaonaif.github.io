@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base{
+    .ativo{
+        @apply text-sky-400;
+        @apply border-b-4 ;
+        @apply p-1 ;
+        @apply border-sky-400;
+        @apply font-bold;
+        @apply transition-all;
+        @apply duration-200;
+        @apply ease-linear;
+    }
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

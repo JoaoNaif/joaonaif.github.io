@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../dist/output.css">
     <script src="https://kit.fontawesome.com/e8cefb18d3.js" crossorigin="anonymous"></script>
 </head>
-<body class="bg-black">
+<body class="bg-black ">
     <header class=" bg-black transition-all duration-200 ease-linear fixed w-screen flex justify-between p-2 text-xl h-10" id="header">
         <p class="text-sky-400 font-bold " id="logo">Jv.Naif</p>
         <svg id="bars" class="w-8 h-8 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
@@ -15,38 +15,44 @@
         </svg>
 
         <div class="hidden" id="card">
-            <svg id="out" class="w-8 h-8 m-2 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+            <svg id="out" class="w-16 h-16 m-2 stroke-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
                 <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
               </svg>
               
             <ul class="text-white  w-screen text-center mt-3" id="list">
-                <li class="my-3 border-b-2 border-red-500"><a href="#">HOME</a></li>
-                <li class="my-3"><a href="#">FORMAÇÃO</a></li>
-                <li class="my-3">TECNOLOGIA</li>
+                <li class="my-10 text-5xl" id="menu-1"><a href="#home">HOME</a></li>
+                <li class="my-10 text-5xl" id="menu-2"><a href="#contato">CONTATO</a></li>
+                <li class="my-10 text-5xl" id="menu-3"><a href="#projeto">PROJETO</a></li>
+                <li class="my-10 text-5xl" id="menu-4"><a href="#tecnologia">TECNOLOGIA</a></li>
+                <li class="my-10 text-5xl" id="menu-5"><a href="#formacao">FORMAÇÃO</a></li>
             </ul>
         </div>
         
           
     </header>
-    <section class="flex h-screen w-[100vw] p-4  " id="home">
-        <div class="pt-24 w-screen text-white">
-            <h4 class="text-xl font-bold text-sky-400">Seja Bem-Vindo</h4>
-            <h1 class="text-4xl font-bold mb-5 mt-3 ">Programador</h1>
-            <p class="pr-12">Eu sou Desenvolvedor Web, atualmente só atuo como Frontend, mas tenho abição de me tornar um programador FullStack, atualmente minha experiência é como freelancer, desenvolvendo pequenos projetos para familiares e conhecidos</p>
-            <ul class="flex mt-4">
-                <li><a href="https://www.instagram.com/joaonaif/?hl=pt-br"><i class="fa-brands fa-instagram mr-4 border-solid border-2 p-[5px] rounded-full"></i></a></li>
-                <li><a href="https://github.com/JoaoNaif"><i class="fa-brands fa-github mr-4 border-solid border-2 p-[5px] rounded-full"></i></a></li>
-                <li><a href="https://br.pinterest.com/jnaifdeabreu/"><i class="fa-brands fa-pinterest-p mr-4 border-solid border-2 p-[5px] rounded-full"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/joaonaif/"><i class="fa-brands fa-linkedin-in mr-4 border-solid border-2 p-[5px] rounded-full "></i></a></li>
-            </ul>
-            <img src="./img/self.png" class="w-[350px] text-center m-auto rounded-md">
+    <section class="flex h-screen w-[100vw] p-4 " id="home">
+        <div class="pt-24 w-screen text-white md:flex">
+            <div class="md:flex-1">
+                <h4 class="text-xl font-bold text-sky-400 md:text-3xl">Seja Bem-Vindo</h4>
+                <h1 class="text-4xl font-bold mb-5 mt-3 md:text-5xl">Programador</h1>
+                <p class="pr-12 md:text-xl">Eu sou Desenvolvedor Web, atualmente só atuo como Frontend, mas tenho abição de me tornar um programador FullStack, atualmente minha experiência é como freelancer, desenvolvendo pequenos projetos para familiares e conhecidos</p>
+            </div>
+            <div class="md:flex md:flex-1 md:flex-col-reverse md:justify-start">
+                <ul class="flex mt-4 md:justify-center md:mt-0 md:mb-4">
+                    <li><a href="https://www.instagram.com/joaonaif/?hl=pt-br"><i class="fa-brands fa-instagram mr-4 border-solid border-2 p-[5px] rounded-full md:text-4xl"></i></a></li>
+                    <li><a href="https://github.com/JoaoNaif"><i class="fa-brands fa-github mr-4 border-solid border-2 p-[5px] rounded-full md:text-4xl"></i></a></li>
+                    <li><a href="https://br.pinterest.com/jnaifdeabreu/"><i class="fa-brands fa-pinterest-p mr-4 border-solid border-2 p-[5px] rounded-full md:text-4xl"></i></a></li>
+                    <li><a href="https://www.linkedin.com/in/joaonaif/"><i class="fa-brands fa-linkedin-in mr-4 border-solid border-2 p-[5px] rounded-full md:text-4xl"></i></a></li>
+                </ul>
+                <img src="./img/self.png" class="w-[350px] text-center m-auto rounded-md md:w-auto md:mt-0">
+            </div>
         </div>
     </section>
-    <section class="text-white p-4">
-        <h1 class="text-2xl font-bold mb-5 mt-3">Olá, meu nome é João Naif</h1>
-        <p class="pr-12 mb-10">Sou brasileiro, natural de São Paulo, capital, na região da Zona Leste. Assim como toda criança que nasce no Brasil, tinha o sonho de jogar futebol. Infelizmente, não consegui realizar esse sonho a nível profissional. No entanto, a competição foi algo que me ajudou muito em vários aspectos da minha vida, como sempre querer ser o melhor e saber lidar com a pressão, entre outros. Interessei-me pela programação ao final do terceiro semestre, durante uma visita que fiz à USP em uma feira de profissões. Atualmente, estou apaixonado por programação e vejo essa como a carreira da minha vida.
+    <section class="text-white p-4" id="contato">
+        <h1 class="text-2xl font-bold mb-5 mt-3 md:text-4xl">Olá, meu nome é João Naif</h1>
+        <p class="pr-12 mb-10 text-xl">Sou brasileiro, natural de São Paulo capital, na região da Zona Leste, e vou trazer como minha história com a programação começou. Assim como toda criança que nasce no Brasil, tinha o sonho de jogar futebol. Infelizmente, não consegui realizar esse sonho a nível profissional. No entanto, a competição foi algo que me ajudou muito em vários aspectos da minha vida, como sempre querer ser o melhor e saber lidar com a pressão. Me Interessei pela programação ao final do terceiro ano do ensino médio, durante uma visita que fiz à USP em uma feira de profissões. Atualmente, estou apaixonado por programação e vejo essa como a carreira da minha vida.
         </p>
-        <div class="text-white flex justify-around">
+        <div class="text-white flex justify-around md:text-xl">
             <div>
                 Nome <br>
                 idade <br>
@@ -62,22 +68,22 @@
                 :joaonaif@gmail.com 
             </div>
         </div>
-        <a href="programador-Curriculo.docx" type="application/docx" class="bg-sky-400 mt-5 ml-7 block w-28 text-center p-1 rounded-md">Download CV</a>
+        <a href="programador-Curriculo.docx" type="application/docx" class="bg-sky-400 mt-5 ml-7 block w-28 text-center p-1 rounded-md md:m-auto md:w-1/2 md:mt-10">Download CV</a>
     </section>
-    <section class="text-white p-4">
+    <section class="text-white p-4" id="projeto">
         <div class="flex flex-col items-center my-10">
-            <h1 class="text-center text-2xl font-bold mb-4">Projetos <span class="text-sky-400">/Experiência</span></h1>
+            <h1 class="text-center text-2xl font-bold mb-4 md:text-5xl">Projetos <span class="text-sky-400">/Experiência</span></h1>
             <div class="h-1 w-24 bg-sky-400 rounded-full"></div>
         </div>
         <div class="flex justify-center flex-col">
             <div class="flex flex-col items-center border-solid border-2 p-4 mb-5">
                 <div>
-                    <h3 class="font-bold text-lg ">API <span class="text-sky-400">de clima</span></h3>
-                    <div class="h-1 w-11 mb-3 bg-sky-400 rounded-full">
+                    <h3 class="font-bold text-lg md:text-2xl">API <span class="text-sky-400">de clima</span></h3>
+                    <div class="h-1 w-11 mb-3 bg-sky-400 rounded-full md:w-14">
                     </div>
-                    <p class="text-sm leading-6">Nesse projeto usei um banco de dados gratuito de temperatura, pegando as informações de todas as capitais do Brasil. É um projeto totalmente pensado para usuário final, monstrando informações como temperatura, pressão, velocidade do vento entre outras </p>
+                    <p class="text-sm leading-6 md:text-lg">Nesse projeto usei um banco de dados gratuito de temperatura, pegando as informações de todas as capitais do Brasil. É um projeto totalmente pensado para usuário final, monstrando informações como temperatura, pressão, velocidade do vento entre outras </p>
                 </div>
-                <div class="flex mt-4">Tecnologias:
+                <div class="flex mt-4 md:text-lg">Tecnologias:
                     <ul class="flex">
                         <li class="mr-2 ml-1">HTML</li> 
                         <li class="mr-2">CSS</li> 
@@ -87,11 +93,11 @@
             </div>
             <div class="flex flex-col items-center border-solid border-2 p-4 mb-5">
                 <div>
-                    <h3 class="font-bold text-lg ">Criando <span class="text-sky-400">Jogo</span></h3>
-                    <div class="h-1 w-11 mb-3 bg-sky-400 rounded-full"></div>
-                    <p class="text-sm leading-6">Esse projeto foi feito através de classes tanto os personagens quanto stage da luta, tentado simular uma luta de RPG   </p>
+                    <h3 class="font-bold text-lg md:text-2xl">Criando <span class="text-sky-400">Jogo</span></h3>
+                    <div class="h-1 w-11 mb-3 bg-sky-400 rounded-full md:w-14"></div>
+                    <p class="text-sm leading-6 md:text-lg">Esse projeto foi feito através de classes tanto os personagens quanto stage da luta, tentado simular uma luta de RPG   </p>
                 </div>
-                <div class="flex mt-4">Tecnologias:
+                <div class="flex mt-4 md:text-lg">Tecnologias:
                     <ul class="flex">
                         <li class="mr-2 ml-1">HTML</li> 
                         <li class="mr-2">CSS</li> 
@@ -101,12 +107,12 @@
             </div>
             <div class="flex flex-col items-center border-solid border-2 p-4 mb-5">
                 <div>
-                    <h3 class="font-bold text-lg ">Validação <span class="text-sky-400">Formulário</span></h3>
-                    <div class="h-1 w-11 mb-3 bg-sky-400 rounded-full">
+                    <h3 class="font-bold text-lg md:text-2xl">Validação <span class="text-sky-400">Formulário</span></h3>
+                    <div class="h-1 w-11 mb-3 bg-sky-400 rounded-full md:w-14">
                     </div>
-                    <p class="text-sm leading-6">Nesse projeto foi feito uma validação de formulário por JavaScript, podendo colocar e retirar requisitos de acordo com o formulário, além de ser totalmente pensado no usuário final com Orientação de requisitos claras. </p>
+                    <p class="text-sm leading-6 md:text-lg">Nesse projeto foi feito uma validação de formulário por JavaScript, podendo colocar e retirar requisitos de acordo com o formulário, além de ser totalmente pensado no usuário final com Orientação de requisitos claras. </p>
                 </div>
-                <div class="flex mt-4">Tecnologias:
+                <div class="flex mt-4 md:text-lg">Tecnologias:
                     <ul class="flex">
                         <li class="mr-2 ml-1">HTML</li> 
                         <li class="mr-2">CSS</li> 
@@ -116,12 +122,12 @@
             </div>
             <div class="flex flex-col items-center border-solid border-2 p-4 mb-5">
                 <div>
-                    <h3 class="font-bold text-lg ">Projeto <span class="text-sky-400">Grid</span></h3>
-                    <div class="h-1 w-11 mb-3 bg-sky-400 rounded-full">
+                    <h3 class="font-bold text-lg md:text-2xl">Projeto <span class="text-sky-400">Grid</span></h3>
+                    <div class="h-1 w-11 mb-3 bg-sky-400 rounded-full md:w-14">
                     </div>
-                    <p class="text-sm leading-6">Esse projeto foi totalmente inspirado no site e nos layouts do StarBucks, feito com o dispaly grid sendo totalmente responsivo para qualquer dispositivo, e tendo alteração no layout de acordo com o tamanho de tela. </p>
+                    <p class="text-sm leading-6 md:text-lg">Esse projeto foi totalmente inspirado no site e nos layouts do StarBucks, feito com o dispaly grid sendo totalmente responsivo para qualquer dispositivo, e tendo alteração no layout de acordo com o tamanho de tela. </p>
                 </div>
-                <div class="flex mt-4">Tecnologias:
+                <div class="flex mt-4 md:text-lg">Tecnologias:
                     <ul class="flex">
                         <li class="mr-2 ml-1">HTML</li> 
                         <li class="mr-2">CSS</li> 
@@ -130,11 +136,12 @@
             </div>
         </div>
     </section>
-    <section class="text-white">
+    <section class="text-white" id="tecnologia">
         <div class="flex justify-center items-center flex-col">
-            <h1>Tecnologias</h1>
-            <ul id="def" class="flex justify-around w-screen">
-                <li id="tudo">Tudo</li>
+            <h1 class="text-center text-2xl font-bold mt-12 mb-2 md:text-5xl">Tecnologias<span class="text-sky-400">/Conhecimentos</span></h1>
+            <div class="h-1 w-24 bg-sky-400 rounded-full"></div>
+            <ul id="def" class="flex justify-around w-screen items-center mt-5 md:text-xl">
+                <li id="tudo" >Tudo</li>
                 <li id="linguage" >Linguagens</li>
                 <li id="framework">Framework/Libs</li>
                 <li id="outros">Outros</li>
@@ -143,11 +150,11 @@
         <div class="flex items-center flex-col mt-5">
             <aside data-def="Linguagens" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <i class="fa-brands fa-js text-5xl text-center text-sky-400 mb-2"></i>
-                    <p class="text-left text-sm">JavaScript é uma poderosa linguagem de programação que pode adicionar interatividade a um site</p>
+                    <i class="fa-brands fa-js text-5xl text-center text-sky-400 mb-2 md:text-7xl"></i>
+                    <p class="text-left text-sm md:text-lg">JavaScript é uma poderosa linguagem de programação que pode adicionar interatividade a um site</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-green-400">Avançado</span></li>
                         <li>início: 10/07/23</li>
                         <li>Dedicação: <span class="text-green-400">Total</span></li>
@@ -157,10 +164,10 @@
             <aside data-def="Framework/Libs" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
                     <h2 class="text-black bg-sky-400 w-28 text-center font-bold rounded-sm mb-2">TAILWINDCSS</h2>
-                    <p class="text-left text-sm">Tailwind CSS é uma estrutura como nenhuma outra. Em vez de restringi-lo a um cenário, ele fornece as ferramentas e a padronização para construir exatamente o que você deseja.</p>
+                    <p class="text-left text-sm md:text-lg">Tailwind CSS é uma estrutura como nenhuma outra. Em vez de restringi-lo a um cenário, ele fornece as ferramentas e a padronização para construir exatamente o que você deseja.</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-green-400">Avançado</span></li>
                         <li>início: 20/11/23</li>
                         <li>Dedicação: <span class="text-yellow-500 ">Mediana</span></li>
@@ -169,11 +176,11 @@
             </aside>
             <aside data-def="Framework/Libs" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <i class="fa-brands fa-react text-5xl text-center text-sky-400 mb-2"></i>
-                    <p class="text-left text-sm">O React é uma biblioteca modular, o que significa que os componentes podem ser facilmente reutilizados e compartilhados entre diferentes partes da aplicação</p>
+                    <i class="fa-brands fa-react text-5xl text-center text-sky-400 mb-2 md:text-7xl" ></i>
+                    <p class="text-left text-sm md:text-lg">O React é uma biblioteca modular, o que significa que os componentes podem ser facilmente reutilizados e compartilhados entre diferentes partes da aplicação</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-red-500">Básico</span></li>
                         <li>início: 15/12/23</li>
                         <li>Dedicação: <span class="text-green-400 ">Total</span></li>
@@ -182,11 +189,11 @@
             </aside>
             <aside data-def="Outros" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <i class="fa-brands fa-html5 text-5xl text-center text-sky-400 mb-2"></i>
-                    <p class="text-left text-sm">HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.</p>
+                    <i class="fa-brands fa-html5 text-5xl text-center text-sky-400 mb-2 md:text-7xl"></i>
+                    <p class="text-left text-sm md:text-lg">HTML (Linguagem de Marcação de HiperTexto) é o bloco de construção mais básico da web. Define o significado e a estrutura do conteúdo da web.</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-green-400">Avançado</span></li>
                         <li>início: 15/03/23</li>
                         <li>Dedicação: <span class="text-green-400 ">Total</span></li>
@@ -195,11 +202,11 @@
             </aside>
             <aside data-def="Outros" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <i class="fa-brands fa-css3-alt text-5xl text-center text-sky-400 mb-2"></i>
-                    <p class="text-left text-sm">CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o português, significa Folha de Estilo em Cascatas.</p>
+                    <i class="fa-brands fa-css3-alt text-5xl text-center text-sky-400 mb-2 md:text-7xl"></i>
+                    <p class="text-left text-sm md:text-lg">CSS é a sigla para o termo em inglês Cascading Style Sheets que, traduzido para o português, significa Folha de Estilo em Cascatas.</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-green-500">Avançado</span></li>
                         <li>início: 03/11/23</li>
                         <li>Dedicação: <span class="text-green-400 ">Total</span></li>
@@ -208,11 +215,11 @@
             </aside>
             <aside data-def="Outros" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <i class="fa-brands fa-git-alt text-5xl text-center text-sky-400 mb-2"></i>
-                    <p class="text-left text-sm">GIT é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p>
+                    <i class="fa-brands fa-git-alt text-5xl text-center text-sky-400 mb-2 md:text-7xl"></i>
+                    <p class="text-left text-sm md:text-lg">GIT é um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software, mas pode ser usado para registrar o histórico de edições de qualquer tipo de arquivo.</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-yellow-400">Intermediário</span></li>
                         <li>início: 08/03/23</li>
                         <li>Dedicação: <span class="text-green-400 ">Total</span></li>
@@ -221,14 +228,14 @@
             </aside>
             <aside data-def="Linguagens" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <div class="flex justify-end items-end bg-sky-400 w-[42px] h-[48px] p-1 mb-2">
-                        <i class="fa-sharp fa-solid fa-t text-black text-2xl"></i>
-                        <i class="fa-solid fa-s text-black text-lg"></i>
+                    <div class="flex justify-end items-end bg-sky-400 w-[42px] h-[48px] p-1 mb-2 md:w-[60px] md:h-[60px]">
+                        <i class="fa-sharp fa-solid fa-t text-black text-2xl md:text-4xl"></i>
+                        <i class="fa-solid fa-s text-black text-lg md:text-2xl"></i>
                     </div>
-                    <p class="text-left text-sm">TypeScript é um superconjunto de JavaScript, ou seja, um conjunto de ferramentas e formas mais eficientes de escrever código JavaScript</p>
+                    <p class="text-left text-sm md:text-lg">TypeScript é um superconjunto de JavaScript, ou seja, um conjunto de ferramentas e formas mais eficientes de escrever código JavaScript</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-red-500">Básico</span></li>
                         <li>início: 05/11/23</li>
                         <li>Dedicação: <span class="text-green-400">Total</span></li>
@@ -237,11 +244,11 @@
             </aside>
             <aside data-def="Linguagens" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <i class="fa-brands fa-java text-5xl text-center text-sky-400 mb-2"></i>
-                    <p class="text-left text-sm">Java é uma linguagem multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si</p>
+                    <i class="fa-brands fa-java text-5xl text-center text-sky-400 mb-2 md:text-7xl"></i>
+                    <p class="text-left text-sm md:text-lg">Java é uma linguagem multiplataforma, orientada a objetos e centrada em rede que pode ser usada como uma plataforma em si</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-red-500">Básico</span></li>
                         <li>início: 18/06/23</li>
                         <li>Dedicação: <span class="text-red-500">Baixa</span></li>
@@ -250,11 +257,11 @@
             </aside>
             <aside data-def="Linguagens" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <i class="fa-brands fa-python text-sky-400 mb-2 text-5xl"></i>
-                    <p class="text-left text-sm">O Python é uma linguagem de programação amplamente usada em aplicações da Web, desenvolvimento de software, ciência de dados e machine learning (ML).</p>
+                    <i class="fa-brands fa-python text-sky-400 mb-2 text-5xl md:text-7xl"></i>
+                    <p class="text-left text-sm md:text-lg">O Python é uma linguagem de programação amplamente usada em aplicações da Web, desenvolvimento de software, ciência de dados e machine learning (ML).</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-yellow-500">Intermediário</span></li>
                         <li>início: 16/02/23</li>
                         <li>Dedicação: <span class="text-yellow-500 ">Mediana</span></li>
@@ -262,12 +269,12 @@
                 </div>
             </aside>
             <aside data-def="Outros" class="hidden border-2 p-2 m-4">
-                <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <i class="fa-solid fa-user-secret text-sky-400 mb-2 text-5xl"></i>
-                    <p class="text-left text-sm">São propriedades básicas da segurança da informação: confidencialidade, integridade, disponibilidade, autenticidade e legalidade.</p>
+                <div class="flex-1 border-r-2 border-sky-400 mx-2 md:text-7xl">
+                    <i class="fa-solid fa-user-secret text-sky-400 mb-2 text-5xl md:text-7xl"></i>
+                    <p class="text-left text-sm md:text-lg">São propriedades básicas da segurança da informação: confidencialidade, integridade, disponibilidade, autenticidade e legalidade.</p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-red-500">Básico</span></li>
                         <li>início: 10/05/23</li>
                         <li>Dedicação: <span class="text-yellow-500 ">Mediana</span></li>
@@ -276,11 +283,11 @@
             </aside>
             <aside data-def="Outros" class="hidden border-2 p-2 m-4">
                 <div class="flex-1 border-r-2 border-sky-400 mx-2">
-                    <i class="fa-brands fa-linux text-sky-400 mb-2 text-5xl"></i>
-                    <p class="text-left text-sm">Linux é um termo popularmente empregado para se referir a sistemas operativos ou sistemas operacionais que utilizam o núcleo Linux. </p>
+                    <i class="fa-brands fa-linux text-sky-400 mb-2 text-5xl md:text-7xl"></i>
+                    <p class="text-left text-sm md:text-lg">Linux é um termo popularmente empregado para se referir a sistemas operativos ou sistemas operacionais que utilizam o núcleo Linux. </p>
                 </div>
                 <div class="w-[160px]">
-                    <ul>
+                    <ul class="md:text-lg">
                         <li>Nível: <span class="text-red-500">Básico</span></li>
                         <li>início: 02/06/23</li>
                         <li>Dedicação: <span class="text-yellow-500 ">Mediana</span></li>
@@ -289,7 +296,71 @@
             </aside>
         </div>
     </section>
-
+    <section class="text-white flex flex-col overflow-x-hidden" id="formacao">
+        <div class="flex flex-col items-center mb-5">
+            <h1 class="text-center text-2xl font-bold mt-12 mb-2 md:text-5xl">Formação<span class="text-sky-400">/Educação</span></h1>
+            <div class="h-1 w-24 bg-sky-400 rounded-full"></div>
+        </div>
+        <div class="flex w-[300vw]  transition-all duration-200 ease-linear" id="slide">
+            <div class="flex  w-screen p-2">
+                <div class="border-4 border-r-0 border-b-0 border-gradient-1 flex-1 p-4">
+                    <h4 class="font-bold text-xl md:text-3xl">Cruzeiro do sul</h4>
+                    <p class="text-sm border-l-2 border-gradient-1 pl-4 md:text-lg">O curso de Ciência da Computação é uma graduação que forma profissionais capazes de desenvolver soluções tecnológicas para as mais diversas áreas. Os estudantes aprendem a projetar e implementar sistemas computacionais </p>
+                </div>
+                <div class="border-4 border-l-0 border-t-0 border-gradient-1 flex-1 p-2 pt-4">
+                    <div class="border-2 border-r-0 border-b-0 border-gradient-1 w-7 p-2 font-bold text-lg md:text-2xl">Detalhes</div>
+                    <div>
+                        <ul>
+                            <li class="ml-2 border-b-2 w-[150px] mb-3 border-gradient-1 text-sm md:text-[20px]">Ciência da Computação</li>
+                            <li class="ml-2 border-b-2 w-[80px] mb-3 border-gradient-1 md:text-lg md:w-[100px]">3-semestre</li>
+                            <li class="ml-2 border-b-2 w-[65px] mb-3 border-gradient-1 md:text-lg md:w-[80px]">Noturno</li>
+                            <li class="ml-2 border-b-2 w-[90px] mb-3 border-gradient-1 md:text-lg md:w-[120px]">Início: 02/23</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex  w-screen p-2">
+                <div class="border-4 border-r-0 border-b-0 border-gradient-2 flex-1 p-4">
+                    <h4 class="font-bold text-xl md:text-3xl">B7web</h4>
+                    <p class="text-sm border-l-2 border-gradient-2 pl-4 md:text-lg">Curso focado no desenvolvimento web com conhecimentos FullStack, ou seja Aulas de Frontend, Backend e Mobile, mostrando sempre as tecnologias atuais estando 100% atualizado ao mercado de trabalho, mais de 700 aulas de programação.</p>
+                </div>
+                <div class="border-4 border-l-0 border-t-0 border-gradient-2 flex-1 p-2 pt-4">
+                    <div class="border-2 border-r-0 border-b-0 border-gradient-2 w-7 p-2 font-bold text-lg md:text-2xl">Principais Tecnologias</div>
+                    <div>
+                        <ul>
+                            <li class="ml-2 border-b-2 w-[110px] mb-3 border-gradient-2 md:text-lg">JavaScript</li>
+                            <li class="ml-2 border-b-2 w-[80px] mb-3 border-gradient-2 md:text-lg">React</li>
+                            <li class="ml-2 border-b-2 w-[65px] mb-3 border-gradient-2 md:text-lg">Next</li>
+                            <li class="ml-2 border-b-2 w-[90px] mb-3 border-gradient-2 md:text-lg">Php</li>
+                            <li class="ml-2 border-b-2 w-[90px] mb-3 border-gradient-2 md:text-lg md:w-[110px]">React Native</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="flex  w-screen p-2">
+                <div class="border-4 border-r-0 border-b-0 border-gradient-3 flex-1 p-4">
+                    <h4 class="font-bold text-xl md:text-3xl">OneBitCode</h4>
+                    <p class="text-sm border-l-2 border-gradient-3 pl-4 md:text-lg">Curso de Python, Com aulas e projetos totalmente atualizado para o mercado de trabalho, sendo abordado ciência de dados, automação, Inteligência Artificial. Também tendo as tecnologias mais usadas pelo mercado como Django, FastApi, Flask, Mongo DB e Pandas.</p>
+                </div>
+                <div class="border-4 border-l-0 border-t-0 border-gradient-3 flex-1 p-2 pt-4">
+                    <div class="border-2 border-r-0 border-b-0 border-gradient-3 w-7 p-2 font-bold text-lg md:text-2xl">Principais Tecnologias</div>
+                    <div>
+                        <ul>
+                            <li class="ml-2 border-b-2 w-[110px] mb-3 border-gradient-3 md:text-lg">Django</li>
+                            <li class="ml-2 border-b-2 w-[80px] mb-3 border-gradient-3 md:text-lg">Flask</li>
+                            <li class="ml-2 border-b-2 w-[65px] mb-3 border-gradient-3 md:text-lg">FastAPI</li>
+                            <li class="ml-2 border-b-2 w-[90px] mb-3 border-gradient-3 md:text-lg">Mongo-DB</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="trade" class="mx-auto">
+            <input type="radio" name="btn-slide" value="1" id="slide-1" checked>
+            <input type="radio" name="btn-slide" value="2" id="slide-2">
+            <input type="radio" name="btn-slide" value="3" id="slide-3">
+        </div>
+    </section>
     <script src="script.js"></script>
 </body>
 </html>
