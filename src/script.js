@@ -15,7 +15,7 @@ document.querySelector('#bars').addEventListener('click', ()=>{
 
 document.querySelector('#out').addEventListener('click', ()=>{
     document.querySelector('#header').style.height = `40px`
-    document.querySelector('#header').style.padding = `8px`
+    document.querySelector('#header').style.paddingRight = `20px`
     document.querySelector('#logo').style.display = 'flex'
     bars.style.display = 'flex'
     document.querySelector('#card').style.display = 'none'
@@ -23,7 +23,7 @@ document.querySelector('#out').addEventListener('click', ()=>{
 
 document.querySelector('#menu-1').addEventListener('click', ()=>{
     document.querySelector('#header').style.height = `40px`
-    document.querySelector('#header').style.padding = `8px`
+    document.querySelector('#header').style.paddingRight = `20px`
     document.querySelector('#logo').style.display = 'flex'
     bars.style.display = 'flex'
     document.querySelector('#card').style.display = 'none'
@@ -31,7 +31,7 @@ document.querySelector('#menu-1').addEventListener('click', ()=>{
 
 document.querySelector('#menu-2').addEventListener('click', ()=>{
     document.querySelector('#header').style.height = `40px`
-    document.querySelector('#header').style.padding = `8px`
+    document.querySelector('#header').style.paddingRight = `20px`
     document.querySelector('#logo').style.display = 'flex'
     bars.style.display = 'flex'
     document.querySelector('#card').style.display = 'none'
@@ -39,7 +39,7 @@ document.querySelector('#menu-2').addEventListener('click', ()=>{
 
 document.querySelector('#menu-3').addEventListener('click', ()=>{
     document.querySelector('#header').style.height = `40px`
-    document.querySelector('#header').style.padding = `8px`
+    document.querySelector('#header').style.paddingRight = `20px`
     document.querySelector('#logo').style.display = 'flex'
     bars.style.display = 'flex'
     document.querySelector('#card').style.display = 'none'
@@ -47,7 +47,7 @@ document.querySelector('#menu-3').addEventListener('click', ()=>{
 
 document.querySelector('#menu-4').addEventListener('click', ()=>{
     document.querySelector('#header').style.height = `40px`
-    document.querySelector('#header').style.padding = `8px`
+    document.querySelector('#header').style.paddingRight = `20px`
     document.querySelector('#logo').style.display = 'flex'
     bars.style.display = 'flex'
     document.querySelector('#card').style.display = 'none'
@@ -55,7 +55,7 @@ document.querySelector('#menu-4').addEventListener('click', ()=>{
 
 document.querySelector('#menu-5').addEventListener('click', ()=>{
     document.querySelector('#header').style.height = `40px`
-    document.querySelector('#header').style.padding = `8px`
+    document.querySelector('#header').style.paddingRight = `8px`
     document.querySelector('#logo').style.display = 'flex'
     bars.style.display = 'flex'
     document.querySelector('#card').style.display = 'none'
